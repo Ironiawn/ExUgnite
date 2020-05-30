@@ -1,0 +1,564 @@
+
+		// Verifica o Penumbra Collection
+                if (lbURL.Text.ToUpper().Contains("PENUMBRA COLLECTION") || currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "PENUMBRA COLLECTION" ||
+                    (lbURL.Text.ToUpper().Contains("PAYMENT") || lbURL.Text.ToUpper().Contains("OBRIGADO")) && OpenGames.LastSeenGame.ToUpper() == "PENUMBRA COLLECTION")
+                {
+                    // Verifica apenas se está na página do jogo
+                    if (lbURL.Text.ToUpper().Contains("PENUMBRA COLLECTION"))
+                        VerifyGameURL.VerifyPenumbra(lbURL, GameButton);
+                    else
+                    {
+                        // Verifica se está na pagina de compra do jogo
+                        if (currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "PENUMBRA COLLECTION")
+                            lbURL.Text = "COMPRAR PENUMBRA COLLECTION via MERCADOPAGO";
+
+                        // Verifica se a compra ocorreu bem
+                        if (lbURL.Text.ToUpper().Contains("PAYMENT OK") || lbURL.Text.ToUpper().Contains("OBRIGADO"))
+                        {
+                            // Anula o último jogo visto
+                            OpenGames.LastSeenGame = "";
+
+                            // Para a navegação
+                            m_chromeBrowser.Stop();
+
+                            // Muda o texto da URL
+                            lbURL.Text = "ADICIONANDO JOGO À BIBLIOTECA, AGUARDE...";
+
+                            // Volta a página inicial
+                            m_chromeBrowser.Load("hubr.ironiawn.com.br");
+
+                            // Adiciona o jogo à conta do cliente
+                            MySQL.ActivateGameKey(true, "0000");
+
+                            // Atualiza o mural
+                            MySQL.UpdateYourActivity("ADQUIRIU A COLETÂNEA DE JOGOS PENUMBRA! QUER SUJAR AS CALÇAS!");
+
+                            // Verifica se salvou o jogo
+                            MySQL.GetActivatedGame("0000");
+
+                            // Se sim, exibir mensagem de sucesso
+                            if (MySQL.ActivatedByUser)
+                                ProgramData.MensagemSucesso("Você adicionou com sucesso o jogo Penumbra Collection à conta HUBR.\n\nAgora, acesse a aba BIBLIOTECA DE JOGOS para começar a baixá-lo!\nObrigado pela compra!");
+                            else
+                                ProgramData.MensagemErro("Houve um erro ao ativar o jogo Penumbra Collection em sua conta!\nContate o suporte HUBR via e-mail: shop@ironiawn.com.br com o comprovante de compra.");
+                        }
+                    }
+                }
+                
+
+
+                
+                // Verifica o Minecraft JAVA Edition
+                if (lbURL.Text.ToUpper().Contains("MINECRAFT JAVA EDITION") || currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "MINECRAFT JAVA EDITION" ||
+                    (lbURL.Text.ToUpper().Contains("PAYMENT") || lbURL.Text.ToUpper().Contains("OBRIGADO")) && OpenGames.LastSeenGame.ToUpper() == "MINECRAFT JAVA EDITION")
+                {
+                    // Verifica apenas se está na página do jogo
+                    if (lbURL.Text.ToUpper().Contains("MINECRAFT JAVA EDITION"))
+                        VerifyGameURL.VerifyMinecraft(lbURL, GameButton);
+                    else
+                    {
+                        // Verifica se está na pagina de compra do jogo
+                        if (currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "MINECRAFT JAVA EDITION")
+                            lbURL.Text = "COMPRAR MINECRAFT JAVA EDITION via MERCADOPAGO";
+
+                        // Verifica se a compra ocorreu bem
+                        if (lbURL.Text.ToUpper().Contains("PAYMENT OK") || lbURL.Text.ToUpper().Contains("OBRIGADO"))
+                        {
+                            // Anula o último jogo visto
+                            OpenGames.LastSeenGame = "";
+
+                            // Para a navegação
+                            m_chromeBrowser.Stop();
+
+                            // Muda o texto da URL
+                            lbURL.Text = "ADICIONANDO JOGO À BIBLIOTECA, AGUARDE...";
+
+                            // Volta a página inicial
+                            m_chromeBrowser.Load("hubr.ironiawn.com.br");
+
+                            // Adiciona o jogo à conta do cliente
+                            MySQL.ActivateGameKey(true, "0001");
+
+                            // Atualiza o mural
+                            MySQL.UpdateYourActivity("ADQUIRIU O JOGO MINECRAFT E JÁ QUER ESCULPIR NOVAS COISAS!");
+
+                            // Verifica se salvou o jogo
+                            MySQL.GetActivatedGame("0001");
+
+                            // Se sim, exibir mensagem de sucesso
+                            if (MySQL.ActivatedByUser)
+                                ProgramData.MensagemSucesso("Você adicionou com sucesso o jogo Minecraft JAVA Edition (via TLauncher) à conta HUBR.\n\nAgora, acesse a aba BIBLIOTECA DE JOGOS para começar a baixá-lo!\nObrigado pela compra!");
+                            else
+                                ProgramData.MensagemErro("Houve um erro ao ativar o jogo Minecraft JAVA Edition (via TLauncher) em sua conta!\nContate o suporte HUBR via e-mail: shop@ironiawn.com.br com o comprovante de compra.");
+                        }
+                    }
+                }
+
+
+                // Verifica o CrossCode
+                if (lbURL.Text.ToUpper().Contains("CROSS CODE") || currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "CROSS CODE" ||
+                    (lbURL.Text.ToUpper().Contains("PAYMENT") || lbURL.Text.ToUpper().Contains("OBRIGADO")) && OpenGames.LastSeenGame.ToUpper() == "CROSS CODE")
+                {
+                    // Verifica apenas se está na página do jogo
+                    if (lbURL.Text.ToUpper().Contains("CROSS CODE"))
+                        VerifyGameURL.VerifyCrossCode(lbURL, GameButton);
+                    else
+                    {
+                        // Verifica se está na pagina de compra do jogo
+                        if (currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "CROSS CODE")
+                            lbURL.Text = "COMPRAR CROSSCODE via MERCADOPAGO";
+
+                        // Verifica se a compra ocorreu bem
+                        if (lbURL.Text.ToUpper().Contains("PAYMENT OK") || lbURL.Text.ToUpper().Contains("OBRIGADO"))
+                        {
+                            // Anula o último jogo visto
+                            OpenGames.LastSeenGame = "";
+
+                            // Para a navegação
+                            m_chromeBrowser.Stop();
+
+                            // Muda o texto da URL
+                            lbURL.Text = "ADICIONANDO JOGO À BIBLIOTECA, AGUARDE...";
+
+                            // Volta a página inicial
+                            m_chromeBrowser.Load("hubr.ironiawn.com.br");
+
+                            // Adiciona o jogo à conta do cliente
+                            MySQL.ActivateGameKey(true, "0002");
+
+                            // Atualiza o mural
+                            MySQL.UpdateYourActivity("ADQUIRIU O JOGO E JÁ QUER SABER DE ELIMINAR INIMIGOS!");
+
+                            // Verifica se salvou o jogo
+                            MySQL.GetActivatedGame("0002");
+
+                            // Se sim, exibir mensagem de sucesso
+                            if (MySQL.ActivatedByUser)
+                                ProgramData.MensagemSucesso("Você adicionou com sucesso o jogo CrossCode à conta HUBR.\n\nAgora, acesse a aba BIBLIOTECA DE JOGOS para começar a baixá-lo!\nObrigado pela compra!");
+                            else
+                                ProgramData.MensagemErro("Houve um erro ao ativar o jogo CrossCode em sua conta!\nContate o suporte HUBR via e-mail: shop@ironiawn.com.br com o comprovante de compra.");
+                        }
+                    }
+                }
+
+
+                // Verifica o Iris Fall
+                if (lbURL.Text.ToUpper().Contains("IRIS FALL") || currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "IRIS FALL" ||
+                    (lbURL.Text.ToUpper().Contains("PAYMENT") || lbURL.Text.ToUpper().Contains("OBRIGADO")) && OpenGames.LastSeenGame.ToUpper() == "IRIS FALL")
+                {
+                    // Verifica apenas se está na página do jogo
+                    if (lbURL.Text.ToUpper().Contains("IRIS FALL"))
+                        VerifyGameURL.VerifyIrisFall(lbURL, GameButton);
+                    else
+                    {
+                        // Verifica se está na pagina de compra do jogo
+                        if (currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "IRIS FALL")
+                            lbURL.Text = "COMPRAR IRIS FALL via MERCADOPAGO";
+
+                        // Verifica se a compra ocorreu bem
+                        if (lbURL.Text.ToUpper().Contains("PAYMENT OK") || lbURL.Text.ToUpper().Contains("OBRIGADO"))
+                        {
+                            // Anula o último jogo visto
+                            OpenGames.LastSeenGame = "";
+
+                            // Para a navegação
+                            m_chromeBrowser.Stop();
+
+                            // Muda o texto da URL
+                            lbURL.Text = "ADICIONANDO JOGO À BIBLIOTECA, AGUARDE...";
+
+                            // Volta a página inicial
+                            m_chromeBrowser.Load("hubr.ironiawn.com.br");
+
+                            // Adiciona o jogo à conta do cliente
+                            MySQL.ActivateGameKey(true, "0003");
+
+                            // Atualiza o mural
+                            MySQL.UpdateYourActivity("ADQUIRIU O JOGO IRIS FALL E QUER NOVOS ARES!");
+
+                            // Verifica se salvou o jogo
+                            MySQL.GetActivatedGame("0003");
+
+                            // Se sim, exibir mensagem de sucesso
+                            if (MySQL.ActivatedByUser)
+                                ProgramData.MensagemSucesso("Você adicionou com sucesso o jogo Iris Fall à conta HUBR.\n\nAgora, acesse a aba BIBLIOTECA DE JOGOS para começar a baixá-lo!\nObrigado pela compra!");
+                            else
+                                ProgramData.MensagemErro("Houve um erro ao ativar o jogo Iris Fall em sua conta!\nContate o suporte HUBR via e-mail: shop@ironiawn.com.br com o comprovante de compra.");
+                        }
+                    }
+                }
+
+
+                // Verifica o Forest Siege
+                if (lbURL.Text.ToUpper().Contains("FOREST SIEGE") || currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "FOREST SIEGE" ||
+                    (lbURL.Text.ToUpper().Contains("PAYMENT") || lbURL.Text.ToUpper().Contains("OBRIGADO")) && OpenGames.LastSeenGame.ToUpper() == "FOREST SIEGE")
+                {
+                    // Verifica apenas se está na página do jogo
+                    if (lbURL.Text.ToUpper().Contains("FOREST SIEGE"))
+                        VerifyGameURL.VerifyForestSiege(lbURL, GameButton);
+                    else
+                    {
+                        // Verifica se está na pagina de compra do jogo
+                        if (currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "FOREST SIEGE")
+                            lbURL.Text = "COMPRAR FOREST SIEGE via MERCADOPAGO";
+
+                        // Verifica se a compra ocorreu bem
+                        if (lbURL.Text.ToUpper().Contains("PAYMENT OK") || lbURL.Text.ToUpper().Contains("OBRIGADO"))
+                        {
+                            // Anula o último jogo visto
+                            OpenGames.LastSeenGame = "";
+
+                            // Para a navegação
+                            m_chromeBrowser.Stop();
+
+                            // Muda o texto da URL
+                            lbURL.Text = "ADICIONANDO JOGO À BIBLIOTECA, AGUARDE...";
+
+                            // Volta a página inicial
+                            m_chromeBrowser.Load("hubr.ironiawn.com.br");
+
+                            // Adiciona o jogo à conta do cliente
+                            MySQL.ActivateGameKey(true, "0004");
+
+                            // Atualiza o mural
+                            MySQL.UpdateYourActivity("ADQUIRIU O JOGO FOREST SIEGE, JÁ SE PREPARANDO PARA SOFRER NO APOCALIPSE!");
+
+                            // Verifica se salvou o jogo
+                            MySQL.GetActivatedGame("0004");
+
+                            // Se sim, exibir mensagem de sucesso
+                            if (MySQL.ActivatedByUser)
+                                ProgramData.MensagemSucesso("Você adicionou com sucesso o jogo Forest Siege à conta HUBR.\n\nAgora, acesse a aba BIBLIOTECA DE JOGOS para começar a baixá-lo!\nObrigado pela compra!");
+                            else
+                                ProgramData.MensagemErro("Houve um erro ao ativar o jogo Forest Siege em sua conta!\nContate o suporte HUBR via e-mail: shop@ironiawn.com.br com o comprovante de compra.");
+                        }
+                    }
+                }
+
+
+                // Verifica o GTA San Andreas
+                if (lbURL.Text.ToUpper().Contains("GTA SAN ANDREAS") || currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "GTA SAN ANDREAS" ||
+                    (lbURL.Text.ToUpper().Contains("PAYMENT") || lbURL.Text.ToUpper().Contains("OBRIGADO")) && OpenGames.LastSeenGame.ToUpper() == "GTA SAN ANDREAS")
+                {
+                    // Verifica apenas se está na página do jogo
+                    if (lbURL.Text.ToUpper().Contains("GTA SAN ANDREAS"))
+                        VerifyGameURL.VerifyGTASA(lbURL, GameButton);
+                    else
+                    {
+                        // Verifica se está na pagina de compra do jogo
+                        if (currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "GTA SAN ANDREAS")
+                            lbURL.Text = "COMPRAR GTA SAN ANDREAS via MERCADOPAGO";
+
+                        // Verifica se a compra ocorreu bem
+                        if (lbURL.Text.ToUpper().Contains("PAYMENT OK") || lbURL.Text.ToUpper().Contains("OBRIGADO"))
+                        {
+                            // Anula o último jogo visto
+                            OpenGames.LastSeenGame = "";
+
+                            // Para a navegação
+                            m_chromeBrowser.Stop();
+
+                            // Muda o texto da URL
+                            lbURL.Text = "ADICIONANDO JOGO À BIBLIOTECA, AGUARDE...";
+
+                            // Volta a página inicial
+                            m_chromeBrowser.Load("hubr.ironiawn.com.br");
+
+                            // Adiciona o jogo à conta do cliente
+                            MySQL.ActivateGameKey(true, "0005");
+
+                            // Atualiza o mural
+                            MySQL.UpdateYourActivity("ADQUIRIU O JOGO GRAND THEFT AUTO SAN ANDREAS E JÁ PODE ROUBAR UNS BANQUINHOS");
+
+                            // Verifica se salvou o jogo
+                            MySQL.GetActivatedGame("0005");
+
+                            // Se sim, exibir mensagem de sucesso
+                            if (MySQL.ActivatedByUser)
+                                ProgramData.MensagemSucesso("Você adicionou com sucesso o jogo Grand Theft Auto: San Andreas e Grand Theft Auto: San Andreas Multiplayer à conta HUBR.\n\nAgora, acesse a aba BIBLIOTECA DE JOGOS para começar a baixá-lo!\nObrigado pela compra!");
+                            else
+                                ProgramData.MensagemErro("Houve um erro ao ativar o jogo Grand Theft Auto: San Andreas e Grand Theft Auto: San Andreas Multiplayer em sua conta!\nContate o suporte HUBR via e-mail: shop@ironiawn.com.br com o comprovante de compra.");
+                        }
+                    }
+                }
+
+
+                // Verifica o SOMA
+                if (lbURL.Text.ToUpper().Contains("SOMA") || currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "SOMA" ||
+                    (lbURL.Text.ToUpper().Contains("PAYMENT") || lbURL.Text.ToUpper().Contains("OBRIGADO")) && OpenGames.LastSeenGame.ToUpper() == "SOMA")
+                {
+                    // Verifica apenas se está na página do jogo
+                    if (lbURL.Text.ToUpper().Contains("SOMA"))
+                        VerifyGameURL.VerifySOMA(lbURL, GameButton);
+                    else
+                    {
+                        // Verifica se está na pagina de compra do jogo
+                        if (currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "SOMA")
+                            lbURL.Text = "COMPRAR SOMA via MERCADOPAGO";
+
+                        // Verifica se a compra ocorreu bem
+                        if (lbURL.Text.ToUpper().Contains("PAYMENT OK") || lbURL.Text.ToUpper().Contains("OBRIGADO"))
+                        {
+                            // Anula o último jogo visto
+                            OpenGames.LastSeenGame = "";
+
+                            // Para a navegação
+                            m_chromeBrowser.Stop();
+
+                            // Muda o texto da URL
+                            lbURL.Text = "ADICIONANDO JOGO À BIBLIOTECA, AGUARDE...";
+
+                            // Volta a página inicial
+                            m_chromeBrowser.Load("hubr.ironiawn.com.br");
+
+                            // Adiciona o jogo à conta do cliente
+                            MySQL.ActivateGameKey(true, "0007");
+
+                            // Atualiza o mural
+                            MySQL.UpdateYourActivity("ADQUIRIU O JOGO SOMA E JÁ PODE EXPLORAR AS PROFUNDEZAS DO MAR!");
+
+                            // Verifica se salvou o jogo
+                            MySQL.GetActivatedGame("0007");
+
+                            // Se sim, exibir mensagem de sucesso
+                            if (MySQL.ActivatedByUser)
+                                ProgramData.MensagemSucesso("Você adicionou com sucesso o jogo SOMA à conta HUBR.\n\nAgora, acesse a aba BIBLIOTECA DE JOGOS para começar a baixá-lo!\nObrigado pela compra!");
+                            else
+                                ProgramData.MensagemErro("Houve um erro ao ativar o jogo SOMA em sua conta!\nContate o suporte HUBR via e-mail: shop@ironiawn.com.br com o comprovante de compra.");
+                        }
+                    }
+                }
+
+
+                // Verifica o OUTLAST 2
+                if (lbURL.Text.ToUpper().Contains("OUTLAST 2") || currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "OUTLAST 2" ||
+                    (lbURL.Text.ToUpper().Contains("PAYMENT") || lbURL.Text.ToUpper().Contains("OBRIGADO")) && OpenGames.LastSeenGame.ToUpper() == "OUTLAST 2")
+                {
+                    // Verifica apenas se está na página do jogo
+                    if (lbURL.Text.ToUpper().Contains("OUTLAST 2"))
+                        VerifyGameURL.VerifyOUTLAST2(lbURL, GameButton);
+                    else
+                    {
+                        // Verifica se está na pagina de compra do jogo
+                        if (currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "OUTLAST 2")
+                            lbURL.Text = "COMPRAR OUTLAST 2 via MERCADOPAGO";
+
+                        // Verifica se a compra ocorreu bem
+                        if (lbURL.Text.ToUpper().Contains("PAYMENT OK") || lbURL.Text.ToUpper().Contains("OBRIGADO"))
+                        {
+                            // Anula o último jogo visto
+                            OpenGames.LastSeenGame = "";
+
+                            // Para a navegação
+                            m_chromeBrowser.Stop();
+
+                            // Muda o texto da URL
+                            lbURL.Text = "ADICIONANDO JOGO À BIBLIOTECA, AGUARDE...";
+
+                            // Volta a página inicial
+                            m_chromeBrowser.Load("hubr.ironiawn.com.br");
+
+                            // Adiciona o jogo à conta do cliente
+                            MySQL.ActivateGameKey(true, "0007");
+
+                            // Atualiza o mural
+                            MySQL.UpdateYourActivity("ADQUIRIU O JOGO OUTLAST 2 E JÁ PODE EXPLORAR TEMPLE GATE.\nMAS NÃO SE CAGUE!");
+
+                            // Verifica se salvou o jogo
+                            MySQL.GetActivatedGame("0007");
+
+                            // Se sim, exibir mensagem de sucesso
+                            if (MySQL.ActivatedByUser)
+                                ProgramData.MensagemSucesso("Você adicionou com sucesso o jogo Outlast 2 à conta HUBR.\n\nAgora, acesse a aba BIBLIOTECA DE JOGOS para começar a baixá-lo!\nObrigado pela compra!");
+                            else
+                                ProgramData.MensagemErro("Houve um erro ao ativar o jogo Outlast 2 em sua conta!\nContate o suporte HUBR via e-mail: shop@ironiawn.com.br com o comprovante de compra.");
+                        }
+                    }
+                }
+
+
+                // Verifica o SUPER MEAT BOY
+                if (lbURL.Text.ToUpper().Contains("SUPER MEAT BOY") || currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "SUPER MEAT BOY" ||
+                    (lbURL.Text.ToUpper().Contains("PAYMENT") || lbURL.Text.ToUpper().Contains("OBRIGADO")) && OpenGames.LastSeenGame.ToUpper() == "SUPER MEAT BOY")
+                {
+                    // Verifica apenas se está na página do jogo
+                    if (lbURL.Text.ToUpper().Contains("SUPER MEAT BOY"))
+                        VerifyGameURL.VerifySUPERMEATBOY(lbURL, GameButton);
+                    else
+                    {
+                        // Verifica se está na pagina de compra do jogo
+                        if (currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "SUPER MEAT BOY")
+                            lbURL.Text = "COMPRAR SUPER MEAT BOY via MERCADOPAGO";
+
+                        // Verifica se a compra ocorreu bem
+                        if (lbURL.Text.ToUpper().Contains("PAYMENT OK") || lbURL.Text.ToUpper().Contains("OBRIGADO"))
+                        {
+                            // Anula o último jogo visto
+                            OpenGames.LastSeenGame = "";
+
+                            // Para a navegação
+                            m_chromeBrowser.Stop();
+
+                            // Muda o texto da URL
+                            lbURL.Text = "ADICIONANDO JOGO À BIBLIOTECA, AGUARDE...";
+
+                            // Volta a página inicial
+                            m_chromeBrowser.Load("hubr.ironiawn.com.br");
+
+                            // Adiciona o jogo à conta do cliente
+                            MySQL.ActivateGameKey(true, "0008");
+
+                            // Atualiza o mural
+                            MySQL.UpdateYourActivity("ADQUIRIU O JOGO SUPER MEAT BOY RACE MODE EDITION E JÁ PODE CORTAR UMAS PERNAS.");
+
+                            // Verifica se salvou o jogo
+                            MySQL.GetActivatedGame("0008");
+
+                            // Se sim, exibir mensagem de sucesso
+                            if (MySQL.ActivatedByUser)
+                                ProgramData.MensagemSucesso("Você adicionou com sucesso o jogo Super Meat Boy - Race Mode Edition à conta HUBR.\n\nAgora, acesse a aba BIBLIOTECA DE JOGOS para começar a baixá-lo!\nObrigado pela compra!");
+                            else
+                                ProgramData.MensagemErro("Houve um erro ao ativar o jogo Super Meat Boy - Race Mode Edition em sua conta!\nContate o suporte HUBR via e-mail: shop@ironiawn.com.br com o comprovante de compra.");
+                        }
+                    }
+                }
+
+
+                // Verifica o REMOTHERED: TORMENTED FATHERS
+                if (lbURL.Text.ToUpper().Contains("REMOTHERED") || currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "REMOTHERED" ||
+                    (lbURL.Text.ToUpper().Contains("PAYMENT") || lbURL.Text.ToUpper().Contains("OBRIGADO")) && OpenGames.LastSeenGame.ToUpper() == "REMOTHERED")
+                {
+                    // Verifica apenas se está na página do jogo
+                    if (lbURL.Text.ToUpper().Contains("REMOTHERED"))
+                        VerifyGameURL.VerifyREMOTHEREDTF(lbURL, GameButton);
+                    else
+                    {
+                        // Verifica se está na pagina de compra do jogo
+                        if (currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "REMOTHERED")
+                            lbURL.Text = "COMPRAR REMOTHERED: TORMENTED FATHERS via MERCADOPAGO";
+
+                        // Verifica se a compra ocorreu bem
+                        if (lbURL.Text.ToUpper().Contains("PAYMENT OK") || lbURL.Text.ToUpper().Contains("OBRIGADO"))
+                        {
+                            // Anula o último jogo visto
+                            OpenGames.LastSeenGame = "";
+
+                            // Para a navegação
+                            m_chromeBrowser.Stop();
+
+                            // Muda o texto da URL
+                            lbURL.Text = "ADICIONANDO JOGO À BIBLIOTECA, AGUARDE...";
+
+                            // Volta a página inicial
+                            m_chromeBrowser.Load("hubr.ironiawn.com.br");
+
+                            // Adiciona o jogo à conta do cliente
+                            MySQL.ActivateGameKey(true, "0009");
+
+                            // Atualiza o mural
+                            MySQL.UpdateYourActivity("ADQUIRIU O JOGO REMOTHERED: TORMENTED FATHERS HD E VAI EXPLORAR UMA MANSÃO F#@#A AI :O");
+
+                            // Verifica se salvou o jogo
+                            MySQL.GetActivatedGame("0009");
+
+                            // Se sim, exibir mensagem de sucesso
+                            if (MySQL.ActivatedByUser)
+                                ProgramData.MensagemSucesso("Você adicionou com sucesso o jogo Remothered: Tormented Fathers HD à conta HUBR.\n\nAgora, acesse a aba BIBLIOTECA DE JOGOS para começar a baixá-lo!\nObrigado pela compra!");
+                            else
+                                ProgramData.MensagemErro("Houve um erro ao ativar o jogo Remothered: Tormented Fathers HD em sua conta!\nContate o suporte HUBR via e-mail: shop@ironiawn.com.br com o comprovante de compra.");
+                        }
+                    }
+                }
+
+
+                // Verifica o GRAND THEFT AUTO: IV
+                if (lbURL.Text.ToUpper().Contains("GTA IV") || currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "GTA IV" ||
+                    (lbURL.Text.ToUpper().Contains("PAYMENT") || lbURL.Text.ToUpper().Contains("OBRIGADO")) && OpenGames.LastSeenGame.ToUpper() == "GTA IV")
+                {
+                    // Verifica apenas se está na página do jogo
+                    if (lbURL.Text.ToUpper().Contains("GTA IV"))
+                        VerifyGameURL.VerifyGTAIV(lbURL, GameButton);
+                    else
+                    {
+                        // Verifica se está na pagina de compra do jogo
+                        if (currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "GTA IV")
+                            lbURL.Text = "COMPRAR GRAND THEFT AUTO: IV via MERCADOPAGO";
+
+                        // Verifica se a compra ocorreu bem
+                        if (lbURL.Text.ToUpper().Contains("PAYMENT OK") || lbURL.Text.ToUpper().Contains("OBRIGADO"))
+                        {
+                            // Anula o último jogo visto
+                            OpenGames.LastSeenGame = "";
+
+                            // Para a navegação
+                            m_chromeBrowser.Stop();
+
+                            // Muda o texto da URL
+                            lbURL.Text = "ADICIONANDO JOGO À BIBLIOTECA, AGUARDE...";
+
+                            // Volta a página inicial
+                            m_chromeBrowser.Load("hubr.ironiawn.com.br");
+
+                            // Adiciona o jogo à conta do cliente
+                            MySQL.ActivateGameKey(true, "0010");
+
+                            // Atualiza o mural
+                            MySQL.UpdateYourActivity("ADQUIRIU O JOGO GRAND THEFT AUTO: IV E AGORA VAI VIRAR UM RUSSO F$#A!");
+
+                            // Verifica se salvou o jogo
+                            MySQL.GetActivatedGame("0010");
+
+                            // Se sim, exibir mensagem de sucesso
+                            if (MySQL.ActivatedByUser)
+                                ProgramData.MensagemSucesso("Você adicionou com sucesso o jogo Grand Theft Auto: IV à conta HUBR.\n\nAgora, acesse a aba BIBLIOTECA DE JOGOS para começar a baixá-lo!\nObrigado pela compra!");
+                            else
+                                ProgramData.MensagemErro("Houve um erro ao ativar o jogo Grand Theft Auto: IV em sua conta!\nContate o suporte HUBR via e-mail: shop@ironiawn.com.br com o comprovante de compra.");
+                        }
+                    }
+                }
+
+                // Verifica o CATHERINE CLASSIC
+                if (lbURL.Text.ToUpper().Contains("CATHERINE CLASSIC") || currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "CATHERINE CLASSIC" ||
+                    (lbURL.Text.ToUpper().Contains("PAYMENT") || lbURL.Text.ToUpper().Contains("OBRIGADO")) && OpenGames.LastSeenGame.ToUpper() == "CATHERINE CLASSIC")
+                {
+                    // Verifica apenas se está na página do jogo
+                    if (lbURL.Text.ToUpper().Contains("CATHERINE CLASSIC"))
+                        VerifyGameURL.VerifyCatherineClassic(lbURL, GameButton);
+                    else
+                    {
+                        // Verifica se está na pagina de compra do jogo
+                        if (currentAddress.ToUpper().Contains("MERCADO") && OpenGames.LastSeenGame.ToUpper() == "CATHERINE CLASSIC")
+                            lbURL.Text = "COMPRAR CATHERINE CLASSIC via MERCADOPAGO";
+
+                        // Verifica se a compra ocorreu bem
+                        if (lbURL.Text.ToUpper().Contains("PAYMENT OK") || lbURL.Text.ToUpper().Contains("OBRIGADO"))
+                        {
+                            // Anula o último jogo visto
+                            OpenGames.LastSeenGame = "";
+
+                            // Para a navegação
+                            m_chromeBrowser.Stop();
+
+                            // Muda o texto da URL
+                            lbURL.Text = "ADICIONANDO JOGO À BIBLIOTECA, AGUARDE...";
+
+                            // Volta a página inicial
+                            m_chromeBrowser.Load("hubr.ironiawn.com.br");
+
+                            // Adiciona o jogo à conta do cliente
+                            MySQL.ActivateGameKey(true, "0011");
+
+                            // Atualiza o mural
+                            MySQL.UpdateYourActivity("ADQUIRIU O JOGO CATHERINE E AGORA TERÁ QUE CORRER FEITO LOUCO!");
+
+                            // Verifica se salvou o jogo
+                            MySQL.GetActivatedGame("0011");
+
+                            // Se sim, exibir mensagem de sucesso
+                            if (MySQL.ActivatedByUser)
+                                ProgramData.MensagemSucesso("Você adicionou com sucesso o jogo Catherine Classic à conta HUBR.\n\nAgora, acesse a aba BIBLIOTECA DE JOGOS para começar a baixá-lo!\nObrigado pela compra!");
+                            else
+                                ProgramData.MensagemErro("Houve um erro ao ativar o jogo Catherine Classic em sua conta!\nContate o suporte HUBR via e-mail: shop@ironiawn.com.br com o comprovante de compra.");
+                        }
+                    }
+                }

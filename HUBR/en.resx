@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnDeleteGame" xml:space="preserve">
+    <value>UNINSTALL GAME</value>
+  </data>
+  <data name="btnLibrary" xml:space="preserve">
+    <value>YOUR LIBRARY</value>
+  </data>
+  <data name="btnLibrary0" xml:space="preserve">
+    <value>UGNITE GAMES INSTALLATION</value>
+  </data>
+  <data name="btnStartupRepair" xml:space="preserve">
+    <value>STARTUP REPAIR</value>
+  </data>
+  <data name="btnStore" xml:space="preserve">
+    <value>STORE</value>
+  </data>
+  <data name="btnUpdateInformation" xml:space="preserve">
+    <value>UPDATE INFO</value>
+  </data>
+  <data name="btnUpdatePassword" xml:space="preserve">
+    <value>UPDATE</value>
+  </data>
+  <data name="btnUploadImage" xml:space="preserve">
+    <value>UPDATE MY IMAGE</value>
+  </data>
+  <data name="btnYourActivity" xml:space="preserve">
+    <value>YOUR ACTIVITY</value>
+  </data>
+  <data name="BuyWithUpay" xml:space="preserve">
+    <value>BUY WITH UPAY</value>
+  </data>
+  <data name="cadastrar" xml:space="preserve">
+    <value>SIGN UP</value>
+  </data>
+  <data name="cadastro_de_usuario" xml:space="preserve">
+    <value>NEW USER SIGN UP</value>
+  </data>
+  <data name="checkSaveLogin" xml:space="preserve">
+    <value>SAVE LOGIN INFORMATION</value>
+  </data>
+  <data name="devpublisher" xml:space="preserve">
+    <value>DEVELOPERS OR PUBLISHERS</value>
+  </data>
+  <data name="entrar" xml:space="preserve">
+    <value>LOGIN</value>
+  </data>
+  <data name="esquecisenha" xml:space="preserve">
+    <value>FORGOT PASSWORD :(</value>
+  </data>
+  <data name="identificacao" xml:space="preserve">
+    <value>USER ID</value>
+  </data>
+  <data name="lb14Days" xml:space="preserve">
+    <value>UGNITE+ | 14 Days</value>
+  </data>
+  <data name="lb30Days" xml:space="preserve">
+    <value>UGNINTE+ | 1 Month</value>
+  </data>
+  <data name="lbDialogAbout" xml:space="preserve">
+    <value>USER ACCOUNT SETTINGS</value>
+  </data>
+  <data name="lbImageURL" xml:space="preserve">
+    <value>IMAGE URL</value>
+  </data>
+  <data name="lbKeyCode" xml:space="preserve">
+    <value>PUT THE 25 KEY CODE BELOW</value>
+  </data>
+  <data name="lbLastActivities" xml:space="preserve">
+    <value>LAST ACTIVITIES MADE AT UGNITE</value>
+  </data>
+  <data name="lbNewPass" xml:space="preserve">
+    <value>NEW PASSWORD</value>
+  </data>
+  <data name="lbPlusInfos" xml:space="preserve">
+    <value>THE DAYS WILL BE HELD IF YOU ALREADY HAVE AN ACTIVE UGNITE+ PLAN</value>
+  </data>
+  <data name="lbPlusPlans" xml:space="preserve">
+    <value>UGNITE+ PLANS</value>
+  </data>
+  <data name="lbSecurityCode" xml:space="preserve">
+    <value>UGNITE SECURE CODE</value>
+  </data>
+  <data name="lbTheme" xml:space="preserve">
+    <value>THEME</value>
+  </data>
+  <data name="lbUpdateAlert" xml:space="preserve">
+    <value>TO UPDATE ANY INFORMATION AT YOUR ACCOUNT YOU'LL NEED THE UGNITE SECURE CODE. IF YOU LOST IT, CONTACT US BY E-MAIL: shop@ironiawn.com.br</value>
+  </data>
+  <data name="lbUsermail" xml:space="preserve">
+    <value>USER E-MAIL</value>
+  </data>
+  <data name="lbWarning" xml:space="preserve">
+    <value>PLEASE WAIT WHILE UGNITE INSTALLS YOUR GAME</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>USER LOGIN</value>
+  </data>
+  <data name="novouser" xml:space="preserve">
+    <value>SIGN UP</value>
+  </data>
+  <data name="resgatarchave" xml:space="preserve">
+    <value>RETRIEVE GAME ACTIVATION KEY</value>
+  </data>
+  <data name="senha" xml:space="preserve">
+    <value>PASSWORD</value>
+  </data>
+  <data name="soudev" xml:space="preserve">
+    <value>I'M A DEV/PUBLISHER</value>
+  </data>
+  <data name="termos" xml:space="preserve">
+    <value>TERMS OF USE</value>
+  </data>
+  <data name="btnAchievements" xml:space="preserve">
+    <value>ACHIEVEMENTS</value>
+  </data>
+  <data name="lbYourAchievements" xml:space="preserve">
+    <value>YOUR ACHIEVEMENTS AT UGNITE</value>
+  </data>
+  <data name="lbDeveloperPanel" xml:space="preserve">
+    <value>DEVELOPER PANEL</value>
+  </data>
+  <data name="lbStatusOperacoes" xml:space="preserve">
+    <value>ALLOWED OPERATIONS USING UAPI</value>
+  </data>
+  <data name="lbAchievementsPanel" xml:space="preserve">
+    <value>ACHIEVEMENTS PANEL</value>
+  </data>
+  <data name="btnInsertAchievement" xml:space="preserve">
+    <value>INSERT</value>
+  </data>
+  <data name="lbAchievementDescription" xml:space="preserve">
+    <value>ACHIEVEMENT DESC</value>
+  </data>
+  <data name="lbAchievementIMG" xml:space="preserve">
+    <value>ACHIEVEMENT IMAGE (128X128) VIA URL</value>
+  </data>
+  <data name="lbAchievementName" xml:space="preserve">
+    <value>ACHIEVEMENT NAME</value>
+  </data>
+  <data name="lbGameAchievements" xml:space="preserve">
+    <value>AVAILABLE ACHIEVEMENTS FOR YOUR GAMES</value>
+  </data>
+  <data name="lbGeneratedID" xml:space="preserve">
+    <value>ACHIEVEMENT ID (AUTO)</value>
+  </data>
+  <data name="lbInsercoes" xml:space="preserve">
+    <value>INSERT ACHIEVEMENTS</value>
+  </data>
+  <data name="lbSelectGameTarget" xml:space="preserve">
+    <value>SELECT GAME TARGET</value>
+  </data>
+</root>

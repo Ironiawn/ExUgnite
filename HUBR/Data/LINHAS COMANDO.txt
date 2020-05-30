@@ -1,0 +1,129 @@
+
+                    #region EXECUÇÃO PENUMBRA COLLECTION
+                    // Execução do Penumbra Collection
+                    if (Environment.CommandLine.Contains("/000") || Environment.CommandLine.Contains("hubr://000/"))
+                    {
+                        Janelas.Exibidores.AbreJogo.GameCode = 0;
+                        Janelas.Exibidores.AbreJogo.GameEXE = 0;
+                        Application.Run(new Janelas.Exibidores.AbreJogo());
+                    }
+                    if (Environment.CommandLine.Contains("/001") || Environment.CommandLine.Contains("hubr://001/"))
+                    {
+                        Janelas.Exibidores.AbreJogo.GameCode = 0;
+                        Janelas.Exibidores.AbreJogo.GameEXE = 1;
+                        Application.Run(new Janelas.Exibidores.AbreJogo());
+                    }
+                    if (Environment.CommandLine.Contains("/002") || Environment.CommandLine.Contains("hubr://002/"))
+                    {
+                        Janelas.Exibidores.AbreJogo.GameCode = 0;
+                        Janelas.Exibidores.AbreJogo.GameEXE = 2;
+                        Application.Run(new Janelas.Exibidores.AbreJogo()); Application.Exit();
+                    }
+                    #endregion
+                    #region EXECUÇÃO MINECRAFT JAVA EDITION
+                    // Execução do Minecraft JAVA Edition
+                    if (Environment.CommandLine.Contains("/100") || Environment.CommandLine.Contains("//100"))
+                    {
+                        MessageBox.Show("OPS");
+                        Janelas.Exibidores.AbreJogo.GameCode = 1;
+                        Janelas.Exibidores.AbreJogo.GameEXE = 0;
+                        Application.Run(new Janelas.Exibidores.AbreJogo());
+                    }
+                    #endregion
+                    #region EXECUÇÃO CROSSCODE
+                    // Execução do CrossCode
+                    if (Environment.CommandLine.Contains("/200") || Environment.CommandLine.Contains("hubr://200/"))
+                    {
+                        Janelas.Exibidores.AbreJogo.GameCode = 2;
+                        Janelas.Exibidores.AbreJogo.GameEXE = 0;
+                        Application.Run(new Janelas.Exibidores.AbreJogo());
+                    }
+                    #endregion
+                    #region EXECUÇÃO IRIS FALL
+                    // Execução do Iris Fall
+                    if (Environment.CommandLine.Contains("/300") || Environment.CommandLine.Contains("hubr://300/"))
+                    {
+
+                        Janelas.Exibidores.AbreJogo.GameCode = 3;
+                        Janelas.Exibidores.AbreJogo.GameEXE = 0;
+                        Application.Run(new Janelas.Exibidores.AbreJogo());
+                    }
+                    #endregion
+                    #region EXECUÇÃO FOREST SIEGE
+                    // Execução do Forest Siege
+                    if (Environment.CommandLine.Contains("/400") || Environment.CommandLine.Contains("hubr://400/"))
+                    {
+                        Janelas.Exibidores.AbreJogo.GameCode = 4;
+                        Application.Run(new Janelas.Exibidores.AbreJogo());
+                    }
+                    #endregion
+                    #region EXECUÇÃO GRAND THEFT AUTO SAN ANDREAS
+                    // Execução do GTA SA SP
+                    if (Environment.CommandLine.Contains("/500") || Environment.CommandLine.Contains("hubr://500/"))
+                    {
+                        Janelas.Exibidores.AbreJogo.GameCode = 5;
+                        Janelas.Exibidores.AbreJogo.GameEXE = 0;
+                        Application.Run(new Janelas.Exibidores.AbreJogo());
+                    }
+                    // Execução do GTA SA MP
+                    if (Environment.CommandLine.Contains("/501") || Environment.CommandLine.Contains("hubr://501/"))
+                    {
+                        Janelas.Exibidores.AbreJogo.GameCode = 5;
+                        Janelas.Exibidores.AbreJogo.GameEXE = 1;
+                        Application.Run(new Janelas.Exibidores.AbreJogo());
+                    }
+                    #endregion
+                    #region EXECUÇÃO SOMA
+                    // Execução do SOMA
+                    if (Environment.CommandLine.Contains("/600") || Environment.CommandLine.Contains("hubr://600/"))
+                    {
+                        Janelas.Exibidores.AbreJogo.GameCode = 6;
+                        Janelas.Exibidores.AbreJogo.GameEXE = 0;
+                        Application.Run(new Janelas.Exibidores.AbreJogo());
+                    }
+                    #endregion
+                    #region EXECUÇÃO OUTLAST 2
+                    // Execução do OUTLAST 2
+                    if (Environment.CommandLine.Contains("/700") || Environment.CommandLine.Contains("hubr://700/"))
+                    {
+                        Janelas.Exibidores.AbreJogo.GameCode = 7;
+                        Janelas.Exibidores.AbreJogo.GameEXE = 0;
+                        Application.Run(new Janelas.Exibidores.AbreJogo());
+                    }
+                    #endregion
+                    #region EXECUÇÃO SUPER MEAT BOY
+                    // Execução do SUPER MEAT BOY
+                    if (Environment.CommandLine.Contains("/800") || Environment.CommandLine.Contains("hubr://800/"))
+                    {
+                        Janelas.Exibidores.AbreJogo.GameCode = 8;
+                        Janelas.Exibidores.AbreJogo.GameEXE = 0;
+                        Application.Run(new Janelas.Exibidores.AbreJogo());
+                    }
+                    #endregion
+                    #region EXECUÇÃO REMOTHERED: TORMENTED FATHERS
+                    // Execução do REMOTHERED: TORMENTED FATHERS
+                    if (Environment.CommandLine.Contains("/REMOTHERED") || Environment.CommandLine.Contains("hubr://REMOTHERED/"))
+                    {
+                        Janelas.Exibidores.AbreJogo.GameCode = 9;
+                        Janelas.Exibidores.AbreJogo.GameEXE = 0;
+                        Application.Run(new Janelas.Exibidores.AbreJogo());
+                    }
+                    #endregion
+                    #region EXECUÇÃO GTA IV
+                    // Execução do GTA IV
+                    if (Environment.CommandLine.Contains("/1000") || Environment.CommandLine.Contains("hubr://1000/"))
+                    {
+                        Janelas.Exibidores.AbreJogo.GameCode = 10;
+                        Janelas.Exibidores.AbreJogo.GameEXE = 0;
+                        Application.Run(new Janelas.Exibidores.AbreJogo());
+                    }
+                    #endregion
+                    #region EXECUÇÃO CATHERINE CLASSIC
+                    // Execução do CATHERINE CLASSIC
+                    if (Environment.CommandLine.Contains("/1001") || Environment.CommandLine.Contains("hubr://1001/"))
+                    {
+                        Janelas.Exibidores.AbreJogo.GameCode = 11;
+                        Janelas.Exibidores.AbreJogo.GameEXE = 0;
+                        Application.Run(new Janelas.Exibidores.AbreJogo());
+                    }
+                    #endregion

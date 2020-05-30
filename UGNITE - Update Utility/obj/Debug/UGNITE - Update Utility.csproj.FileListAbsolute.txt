@@ -1,0 +1,10 @@
+D:\Projetos\HUBR\UGNITE - Update Utility\bin\Debug\UGNITE - Update Utility.exe.config
+D:\Projetos\HUBR\UGNITE - Update Utility\bin\Debug\UGNITE - Update Utility.exe
+D:\Projetos\HUBR\UGNITE - Update Utility\bin\Debug\SharpCompress.dll
+D:\Projetos\HUBR\UGNITE - Update Utility\obj\Debug\UGNITE - Update Utility.csprojAssemblyReference.cache
+D:\Projetos\HUBR\UGNITE - Update Utility\obj\Debug\UGNITE___Update_Utility.Home.resources
+D:\Projetos\HUBR\UGNITE - Update Utility\obj\Debug\UGNITE___Update_Utility.Properties.Resources.resources
+D:\Projetos\HUBR\UGNITE - Update Utility\obj\Debug\UGNITE - Update Utility.csproj.GenerateResource.cache
+D:\Projetos\HUBR\UGNITE - Update Utility\obj\Debug\UGNITE - Update Utility.csproj.CoreCompileInputs.cache
+D:\Projetos\HUBR\UGNITE - Update Utility\obj\Debug\UGNITE - Update Utility.csproj.CopyComplete
+D:\Projetos\HUBR\UGNITE - Update Utility\obj\Debug\UGNITE - Update Utility.exe

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UGNITE", "HUBR\UGNITE.csproj", "{E93842A5-D05D-41E6-9A09-67106FA2DF77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E93842A5-D05D-41E6-9A09-67106FA2DF77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E93842A5-D05D-41E6-9A09-67106FA2DF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E93842A5-D05D-41E6-9A09-67106FA2DF77}.Debug|x64.ActiveCfg = Debug|x64
+		{E93842A5-D05D-41E6-9A09-67106FA2DF77}.Debug|x64.Build.0 = Debug|x64
+		{E93842A5-D05D-41E6-9A09-67106FA2DF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E93842A5-D05D-41E6-9A09-67106FA2DF77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E93842A5-D05D-41E6-9A09-67106FA2DF77}.Release|x64.ActiveCfg = Release|x64
+		{E93842A5-D05D-41E6-9A09-67106FA2DF77}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37640CBE-97ED-44A9-A55E-02E747E76062}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+<project outputDir="D:\Projetos\HUBR\HUBR\bin\x64\Debug\Confused" baseDir="D:\Projetos\HUBR\HUBR\bin\x64\Debug" xmlns="http://confuser.codeplex.com">
+  <packer id="compressor" />
+  <module path="UGNITE.exe">
+    <rule pattern="true" inherit="false">
+      <protection id="rename" />
+      <protection id="constants" />
+    </rule>
+  </module>
+  <module path="Google.Protobuf.dll" />
+  <module path="INIFileParser.dll" />
+  <module path="MySql.Data.dll">
+    <rule pattern="true" preset="maximum">
+      <protection id="anti ildasm" />
+      <protection id="anti tamper" />
+      <protection id="constants" />
+      <protection id="ctrl flow" />
+    </rule>
+  </module>
+  <module path="SharpCompress.dll" />
+  <module path="System.Buffers.dll" />
+  <module path="System.Memory.dll" />
+  <module path="System.Numerics.Vectors.dll" />
+  <module path="System.Runtime.CompilerServices.Unsafe.dll" />
+  <module path="System.Text.Encodings.Web.dll" />
+  <module path="System.Threading.Tasks.Extensions.dll" />
+</project>

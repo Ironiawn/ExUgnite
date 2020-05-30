@@ -1,0 +1,2 @@
+GrandSA.ico
+samp.exe
