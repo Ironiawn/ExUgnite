@@ -7,7 +7,7 @@ The project is just a concept now and have several security issues(!!)
 
 Please note:
 
-- The passwords on the code and the servers doesn't not work anymore
+- The passwords on the code and the servers doesn't work anymore
 - The project is outdated (mid 2019)
 - Framework target: 4.7.2
 - Uses MySQL
